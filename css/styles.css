@@ -1,0 +1,36 @@
+html {/* border box*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  }
+
+  *:not(body):not(html) {/*borders for testing*/
+    border:1px dashed #000;
+  }
+
+
+/*Our styles*/
+
+html {
+  background: url('../img/bg.png') repeat;
+}
+
+body {
+  background: url('../img/rag.png') repeat-x;
+  position: relative;
+  margin-top: 0;
+}
+
+
+.rag {
+  border: 2px solid red;
+  height: 100px;
+  width: 100px;
+}
