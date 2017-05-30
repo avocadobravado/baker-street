@@ -15,7 +15,6 @@ html {/* border box*/
     border:1px dashed #000;
   }
 
-
 /*Our styles*/
 
 html {
@@ -28,9 +27,114 @@ body {
   margin-top: 0;
 }
 
+a {
+  color: #890101;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
-.rag {
-  border: 2px solid red;
-  height: 100px;
-  width: 100px;
+a:hover {
+  color: #ff0000;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*footer {
+  clear:both;
+}*/
+
+/* MEDIA QUERIES */
+
+/*Min-Width 320px*/
+
+@media screen and (min-width: 320px) {
+}
+  .left-col {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: 300px;
+    border: 1px dashed green;
+  }
+hr {
+  border:none;
+ 	width: 93%;
+	margin: 35px auto 0;
+	border-bottom: 1px solid #999;
+	box-shadow: 0 0px 1px 1px rgba(255, 255, 255, .4);
+
+}
+  .navigation {
+    margin-top: 10px;
+  }
+
+  .link-area {
+    text-align: center;
+    /*width: 90%;*/
+  }
+
+  .link-area li {
+    display: inline-block;
+    padding: 5% 5%;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    width: 30%;
+    border-bottom: 1px solid #999;
+  }
+  .link-bold {
+    font-weight: normal;
+    display: block;
+  }
+  .logo {
+    margin: 5% auto;
+    display: block;
+    width: 55%;
+  }
+
+/*RIGHT COL AREA*/
+  .right-col {
+    padding: 3%;
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.6em;
+  }
+
+figure {
+  display: inline-block;
+
+}
+
+.floated-figure {
+  border: 1px dashed red;
+  float: left;
+  padding: 5px;
+  margin:0 auto;
+  /*width: 50%;*/
+  /*min-width: 150px;*/
+
+}
+
+.floated-figure img {
+  width: 40vw;
+  margin: auto;
+}
+
+.images {
+  border: 1px solid purple;
+  overflow: auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
 }
