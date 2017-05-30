@@ -197,9 +197,7 @@ footer a {
 }
 
 @media screen and (min-width: 750px) {
-
   body {
-    background-color: #c0c0c0;
     overflow: auto;
     height: 100vh;
   }
@@ -251,26 +249,22 @@ footer a {
   }
 
   #logo-text {
-    /*padding: 116px 0px;*/
     position: absolute;
     bottom: 32%;
     left: 25%;
-    /*bottom: 50%;
-    left: 50%;*/
-    /*transform: translate(-50%, 90%);*/
     width: 146px;
-
   }
 
   #logo-illustration {
     display: block;
     position: absolute;
-    /*bottom: 50%;
-    left: 50%;*/
-    /*transform: translate(-50%, 55%);*/
     width: 279px;
     top: 1%;
     left: 2%;
+  }
+
+  .floated-figure {
+    width: 33.33%;
   }
 
   .text-area {
@@ -278,7 +272,13 @@ footer a {
   }
 
   footer {
+    margin-top: 3%;
     float: right;
+    clear: both;
+    width: 100%;
   }
+}
+
+@media screen and (min-width: 1625px) {
 
 }
