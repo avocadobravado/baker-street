@@ -82,7 +82,6 @@ footer a {
     margin-right: auto;
     width: 100%;
     min-width: 300px;
-    border: 1px dashed green;
   }
   hr {
     border:none;
@@ -109,6 +108,10 @@ footer a {
     text-align: center;
     width: 30%;
     border-bottom: 1px solid #999;
+  }
+
+  .lg-link-area {
+    display: none;
   }
   .link-bold {
     font-weight: normal;
@@ -149,7 +152,6 @@ footer a {
   }
 
   .floated-figure {
-    border: 1px dashed red;
     float: left;
     padding: 15px;
     margin:0 auto;
@@ -164,7 +166,6 @@ footer a {
   }
 
   .images {
-    border: 1px solid purple;
     overflow: auto;
   }
 
@@ -174,10 +175,6 @@ footer a {
     text-transform: uppercase;
     font-size: 1em;
   }
-
-  /*footer {
-    position: relative;
-  }*/
 
   footer {
     background: url('../img/ornament.png') 50% -9px repeat-x;
@@ -242,7 +239,6 @@ footer a {
 
   .logo-area {
     position: relative;
-    border: 1px solid red;
     height: 300px;
     width: 300px;
     margin: auto;
@@ -279,6 +275,12 @@ footer a {
   }
 }
 
-@media screen and (min-width: 1625px) {
+/*@media screen and (min-width: 1625px) {
+  .logo-area {
+    float: left;
+  }
 
-}
+  .md-link-area {
+    float: right;
+  }
+}*/
