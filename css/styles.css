@@ -12,10 +12,11 @@ html {/* border box*/
   }
 
   *:not(body):not(html) {/*borders for testing*/
-    border:1px dashed #000;
+    /*border:1px dashed #000;*/
   }
 
-/*Our styles*/
+
+/*GLOBAL styles*/
 
 html {
   background: url('../img/bg.png') repeat;
@@ -25,10 +26,13 @@ body {
   background: url('../img/rag.png') repeat-x;
   position: relative;
   margin-top: 0;
+  color: #292929;
+  text-shadow: 1px 1px #fff;
 }
 
 a {
   color: #890101;
+  text-shadow: 1px 1px #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -41,16 +45,38 @@ li {
   list-style-type: none;
 }
 
-/*footer {
-  clear:both;
-}*/
+figcaption strong {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+footer a {
+  text-transform: none;
+}
+
+.sm-link-area {
+  display: none;
+}
+
+.md-link-area {
+  display: none;
+}
 
 /* MEDIA QUERIES */
 
 /*Min-Width 320px*/
 
-@media screen and (min-width: 320px) {
-}
+@media screen and (min-width: 100px) {
+
+  body {
+    min-width: 300px;
+    height: 100vh;
+  }
+
   .left-col {
     margin-left: auto;
     margin-right: auto;
@@ -58,28 +84,28 @@ li {
     min-width: 300px;
     border: 1px dashed green;
   }
-hr {
-  border:none;
- 	width: 93%;
-	margin: 35px auto 0;
-	border-bottom: 1px solid #999;
-	box-shadow: 0 0px 1px 1px rgba(255, 255, 255, .4);
+  hr {
+    border:none;
+    width: 93%;
+  	margin: 35px auto 0;
+  	border-bottom: 1px solid #999;
+  	box-shadow: 0 0px 1px 1px rgba(255, 255, 255, .4);
 
-}
+  }
   .navigation {
     margin-top: 10px;
   }
 
-  .link-area {
+  .sm-link-area {
+    display: block;
     text-align: center;
-    /*width: 90%;*/
   }
 
-  .link-area li {
+  .sm-link-area li {
     display: inline-block;
     padding: 5% 5%;
     font-family: sans-serif;
-    font-size: 0.8em;
+    font-size: 13px;
     text-align: center;
     width: 30%;
     border-bottom: 1px solid #999;
@@ -94,6 +120,14 @@ hr {
     width: 55%;
   }
 
+  #logo-illustration {
+    display: none;
+  }
+
+  #logo-text {
+    padding: 0;
+  }
+
 /*RIGHT COL AREA*/
   .right-col {
     padding: 3%;
@@ -102,39 +136,149 @@ hr {
 
   h1 {
     text-align: center;
+    margin-bottom: 4%;
   }
 
   p {
     font-size: 1.6em;
+    margin-bottom: 4%;
   }
 
-figure {
-  display: inline-block;
+  figure {
+    display: inline-block;
+  }
 
+  .floated-figure {
+    border: 1px dashed red;
+    float: left;
+    padding: 15px;
+    margin:0 auto;
+    width: 50%;
+  }
+
+  .floated-figure img {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 2px #c0c0c0;
+  }
+
+  .images {
+    border: 1px solid purple;
+    overflow: auto;
+  }
+
+  figcaption {
+    text-align: center;
+    margin: 4% 0;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+
+  /*footer {
+    position: relative;
+  }*/
+
+  footer {
+    background: url('../img/ornament.png') 50% -9px repeat-x;
+    width: 93%;
+    margin: 0 auto 5% auto;
+  }
+
+  footer p {
+    padding-top: 40px;
+    margin-bottom: 3px;
+    font-size: 0.8em;
+  }
+
+  .ethan {
+    padding-top: 0;
+  }
 }
 
-.floated-figure {
-  border: 1px dashed red;
-  float: left;
-  padding: 5px;
-  margin:0 auto;
-  /*width: 50%;*/
-  /*min-width: 150px;*/
+@media screen and (min-width: 750px) {
 
-}
+  body {
+    background-color: #c0c0c0;
+    overflow: auto;
+    height: 100vh;
+  }
 
-.floated-figure img {
-  width: 40vw;
-  margin: auto;
-}
+  .left-col {
+    float: left;
+    width: 33%;
+  }
 
-.images {
-  border: 1px solid purple;
-  overflow: auto;
-}
+  .sm-link-area {
+    display: none;
+  }
 
-figcaption {
-  text-align: center;
-}
+  .md-link-area {
+    display: block;
+    text-align: center;
+  }
+
+  .md-link-area li {
+    font-family: serif;
+    margin: 0 auto;
+    padding: 5% 0;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    width: 60%;
+    border-bottom: 1px solid #999;
+  }
+
+  .md-link-area li:first-child {
+    border-top: 1px solid #999;
+  }
+
+  .link-bold {
+    font-weight: bold;
+  }
+
+  .right-col {
+    float: right;
+    width: 58%;
+
+  }
+
+  .logo-area {
+    position: relative;
+    border: 1px solid red;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+  }
+
+  #logo-text {
+    /*padding: 116px 0px;*/
+    position: absolute;
+    bottom: 32%;
+    left: 25%;
+    /*bottom: 50%;
+    left: 50%;*/
+    /*transform: translate(-50%, 90%);*/
+    width: 146px;
+
+  }
+
+  #logo-illustration {
+    display: block;
+    position: absolute;
+    /*bottom: 50%;
+    left: 50%;*/
+    /*transform: translate(-50%, 55%);*/
+    width: 279px;
+    top: 1%;
+    left: 2%;
+  }
+
+  .text-area {
+    margin-top: 170px;
+  }
+
+  footer {
+    float: right;
+  }
 
 }
